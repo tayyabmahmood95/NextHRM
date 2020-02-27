@@ -14,15 +14,7 @@
     <classes>
       <class name="Tests.TestClass"/>
       
-       <methods>
-	   <include name =  "LoginTest"   />
-	   <include name =  "ReportTest"  />
-	   <include name =  "ProfileTest" />
-	   <include name =  "AddSkill"    />
-	   <include name =  "RemoveSkill" />
-	   <include name =  "EventTest"   />
-	   <include name =  "Logout"      />
-	   </methods> 
+      
       
       
     </classes>
