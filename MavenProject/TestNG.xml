@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="false">
+  <test name="Test">
+  
+  <parameter name="username" value="tayyab.mahmood@nxb.com.pk"></parameter>
+  <parameter name="password" value="T@yy@b123">                </parameter>
+  <parameter name="EventName" value="Page Object Model">       </parameter>
+  <parameter name="SkillName" value="Regression">              </parameter>
+  <parameter name="FromDate1" value ="2019-12-01">             </parameter>
+  <parameter name="ToDate1" value ="2019-12-24">               </parameter>
+  <parameter name="EventDate" value ="2021-01-01">             </parameter> 
+   
+    <classes>
+      <class name="Tests.TestClass"/>
+      
+       <methods>
+	   <include name =  "LoginTest"   />
+	   <include name =  "ReportTest"  />
+	   <include name =  "ProfileTest" />
+	   <include name =  "AddSkill"    />
+	   <include name =  "RemoveSkill" />
+	   <include name =  "EventTest"   />
+	   <include name =  "Logout"      />
+	   </methods> 
+      
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
