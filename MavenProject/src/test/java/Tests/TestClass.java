@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -109,8 +110,12 @@ public class TestClass {
 	public void Browser() {
 		//System.setProperty("webdriver.chrome.driver","D:\\chromedriver_win32\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver","D:\\chromedriver_win32\\chromedriver.exe");
-		
-		driver=new ChromeDriver(); 
+		ChromeOptions options = new ChromeOptions();
+        options.addArguments("headless");
+        //options.addArguments("window-size=1200x600");
+        options.addArguments("window-size=1920x1080");
+        driver = new ChromeDriver(options);
+		//driver=new ChromeDriver(); 
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		driver.manage().window().maximize();	
 		driver.get ( "https://nexthrm.vteamslabs.com/") ;

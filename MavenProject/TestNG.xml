@@ -16,10 +16,10 @@
       
        <methods>
 	   <include name =  "LoginTest"   />
-	   <exclude name =  "ReportTest"  />
-	   <exclude name =  "ProfileTest" />
-	   <exclude name =  "AddSkill"    />
-	   <exclude name =  "RemoveSkill" />
+	   <include name =  "ReportTest"  />
+	   <include name =  "ProfileTest" />
+	   <include name =  "AddSkill"    />
+	   <include name =  "RemoveSkill" />
 	   <exclude name =  "EventTest"   />
 	   <exclude name =  "Logout"      /> 
 	   </methods> 
