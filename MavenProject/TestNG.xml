@@ -14,9 +14,16 @@
     <classes>
       <class name="Tests.TestClass"/>
       
-      
-      
-      
+       <methods>
+	   <include name =  "LoginTest"   />
+	   <exclude name =  "ReportTest"  />
+	   <exclude name =  "ProfileTest" />
+	   <exclude name =  "AddSkill"    />
+	   <exclude name =  "RemoveSkill" />
+	   <exclude name =  "EventTest"   />
+	   <exclude name =  "Logout"      /> 
+	   </methods> 
+  
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

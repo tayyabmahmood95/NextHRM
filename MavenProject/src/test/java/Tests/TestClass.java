@@ -3,6 +3,8 @@ package Tests;
 
 
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -105,8 +107,11 @@ public class TestClass {
 
 	@BeforeTest 
 	public void Browser() {
+		//System.setProperty("webdriver.chrome.driver","D:\\chromedriver_win32\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver","D:\\chromedriver_win32\\chromedriver.exe");
+		
 		driver=new ChromeDriver(); 
+		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		driver.manage().window().maximize();	
 		driver.get ( "https://nexthrm.vteamslabs.com/") ;
 		obj=new Login(driver);

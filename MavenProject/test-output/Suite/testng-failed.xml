@@ -3,19 +3,24 @@
 <suite name="Failed suite [Suite]">
   <parameter name="password" value="T@yy@b123"/>
   <parameter name="SkillName" value="Regression"/>
+  <parameter name="EventDate" value="2021-01-01"/>
+  <parameter name="FromDate1" value="2019-12-01"/>
+  <parameter name="ToDate1" value="2019-12-24"/>
   <parameter name="EventName" value="Page Object Model"/>
   <parameter name="username" value="tayyab.mahmood@nxb.com.pk"/>
   <test name="Test(failed)">
     <parameter name="password" value="T@yy@b123"/>
     <parameter name="SkillName" value="Regression"/>
+    <parameter name="EventDate" value="2021-01-01"/>
+    <parameter name="FromDate1" value="2019-12-01"/>
+    <parameter name="ToDate1" value="2019-12-24"/>
     <parameter name="EventName" value="Page Object Model"/>
     <parameter name="username" value="tayyab.mahmood@nxb.com.pk"/>
     <classes>
       <class name="Tests.TestClass">
         <methods>
           <include name="Browser"/>
-          <include name="ReportTest"/>
-          <include name="Closure"/>
+          <include name="LoginTest"/>
         </methods>
       </class> <!-- Tests.TestClass -->
     </classes>
